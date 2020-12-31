@@ -15,10 +15,10 @@ export class HomepageComponent implements OnInit {
     ngOnInit(): void {
         //If rounting happen document.ready function not trigger
         $.getScript('assets/js/custom-script.js');
-        
+
         this.content = [
-            {img:"https://product.massbunk.in/massbunk/HomeBanner1.jpg","title":"About Us"},
-            {img:"https://product.massbunk.in/massbunk/HomeBanner2.jpg","title":"Our Services"}
+            {img:"https://product.massbunk.in/massbunk/HomeBanner1.jpg","title":"Let’s Digitize Your Dreams"},
+            {img:"https://product.massbunk.in/massbunk/HomeBanner2.jpg","title":"We Promote Your Business The Right Way"}
         ];
         this.aboutSection = [
             {img:"https://product.massbunk.in/massbunk/HomeBanner3.jpg"},

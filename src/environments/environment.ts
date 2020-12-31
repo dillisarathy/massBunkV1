@@ -6,6 +6,7 @@ export const environment = {
   production: false
 };
 
+export const baseURL=`https://ecommerceapi.massbunk.in/`;
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

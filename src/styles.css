@@ -2729,6 +2729,9 @@
     color: var(--thm-base);
     padding-left: 7px;
   }
+  .dot {
+    color: var(--thm-base);
+  }
   
   .sec-title .lower-text {
     position: relative;
