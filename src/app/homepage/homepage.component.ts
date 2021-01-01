@@ -13,7 +13,7 @@ export class HomepageComponent implements OnInit {
     public aboutSection : {"img":string}[]
     public workCase : {"img":String,"category":String,"companyName":String,"url":String}[]
     ngOnInit(): void {
-        //If rounting happen document.ready function not trigger
+        //If routing happen document.ready function not trigger
         $.getScript('assets/js/custom-script.js');
         
         this.content = [
@@ -25,10 +25,12 @@ export class HomepageComponent implements OnInit {
             {img:"https://product.massbunk.in/massbunk/HomeBanner4.jpg"}
         ]
         this.workCase = [
-            {img:"http://layerdrops.com/linoorhtml/images/gallery/1.jpg",category:"branding",companyName:"WorldMart",url:"http://virtual.massbunk.in/"},
-            {img:"http://layerdrops.com/linoorhtml/images/gallery/2.jpg",category:"app-development",companyName:"Dialog",url:"https://www.dialog.lk/"},
-            {img:"http://layerdrops.com/linoorhtml/images/gallery/3.jpg",category:"digital-marketing",companyName:"Sukkubhai",url:"http://sukkubhaibiryani.com/"},
-            {img:"http://layerdrops.com/linoorhtml/images/gallery/4.jpg",category:"branding",companyName:"Berbera Fishing Compnay",url:"http://berberafishing.company/"}
+            {img:"https://product.massbunk.in/massbunk/Branding1.jpg",category:"branding",companyName:"WorldMart",url:"javascript:;"},
+            {img:"https://product.massbunk.in/massbunk/Branding2.jpg",category:"branding",companyName:"Berbera",url:"http://berberafishing.company/"},
+            {img:"https://product.massbunk.in/massbunk/Application1.jpg",category:"app-development",companyName:"Dialog",url:"https://www.dialog.lk/"},
+            {img:"https://product.massbunk.in/massbunk/Application2.jpg",category:"app-development",companyName:"Dialog",url:"https://www.dialog.lk/"},
+            {img:"https://product.massbunk.in/massbunk/Social.jpg",category:"digital-marketing",companyName:"Sukkubhai",url:"http://sukkubhaibiryani.com/"},
+            {img:"https://product.massbunk.in/massbunk/webdesign1.jpg",category:"web-design",companyName:"Diner",url:"https://about.dinerqr.com/"}
         ]
     }
 

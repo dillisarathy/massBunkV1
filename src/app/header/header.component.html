@@ -6,7 +6,7 @@
         <div class="inner-container clearfix">
             <!--Logo-->
             <div class="logo-box">
-                <div class="logo"><a routerLink="" href="javascript:void(0);" title="Massbunk - Smart Web Design Agency"><img
+                <div class="logo"><a routerLink=" " href="javascript:void(0);" title="Massbunk - Smart Web Design Agency"><img
                             src="{{images.logo}}" id="thm-logo" alt="Massbunk - Smart Web Design Agency"
                             title="Massbunk - Digitize Your Dream"></a></div>
             </div>
@@ -19,11 +19,11 @@
                 <nav class="main-menu navbar-expand-md navbar-light">
                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                         <ul class="navigation clearfix">
-                            <li [ngClass]="{'current':selectedCategory=='home'}" (click)="changeTab('home')"><a routerLink = '' href="javascript:void(0);">Home</a></li>
-                            <li><a routerLink= "/about" skipLocationChange (click)="changeTab('about')" [ngClass]="{'current':selectedCategory=='about'}" href="javascript:void(0);">About Us</a></li>
-                            <li class="dropdown"><a routerLink="/services" (click)="changeTab('services')" [ngClass]="{'current':selectedCategory=='services'}" skipLocationChange href="javaScript:void(0);">Services</a>
+                            <li routerLinkActive="current"><a routerLink = ' ' skipLocationChange href="javascript:void(0);">Home</a></li>
+                            <li routerLinkActive="current"><a routerLink= "/about" skipLocationChange href="javascript:void(0);">About Us</a></li>
+                            <li routerLinkActive="current"><a routerLink="/services" skipLocationChange href="javaScript:void(0);">Services</a>
                             </li>
-                            <li><a routerLink="/contact" skipLocationChange (click)="changeTab('contact')" [ngClass]="{'current':selectedCategory=='contact'}">Contact</a></li>
+                            <li routerLinkActive="current"><a routerLink="/contact" skipLocationChange>Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -60,7 +60,7 @@
     <div class="side-menu__block-inner ">
         <div class="side-menu__top justify-content-end">
 
-            <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="images/icons/close-1-1.png"
+            <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="http://layerdrops.com/linoorhtml/images/icons/close-1-1.png"
                     alt=""></a>
         </div><!-- /.side-menu__top -->
 

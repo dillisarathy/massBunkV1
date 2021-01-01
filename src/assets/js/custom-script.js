@@ -29,18 +29,16 @@
 
   //Submenu Dropdown Toggle
   if ($(".main-header li.dropdown ul").length) {
-    console.log("varutha");
     $(".main-header .navigation li.dropdown > a").append(
       '<div class="dropdown-btn"><span class="fa fa-angle-right"></span></div>'
     );
   }
 
   //Mobile Nav Hide Show
-  if ($(".side-menu__block").length) {
+  if ($(".side-menu__block").length && ($(".mobile-nav__container").find('.navbar-collapse').length == 0)) {
     var mobileMenuContent = $(".main-header .nav-outer .main-menu").html();
     var mobileNavContainer = $(".mobile-nav__container");
     mobileNavContainer.append(mobileMenuContent);
-
     //Dropdown Button
     mobileNavContainer
       .find("li.dropdown .dropdown-btn")

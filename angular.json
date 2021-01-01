@@ -30,7 +30,6 @@
               "src/assets/js/jquery.js",
               "src/assets/js/bootstrap.min.js",
               "src/assets/js/appear.js",
-              "src/assets/js/custom-script.js",
               "src/assets/js/jquery.easing.min.js",
               "src/assets/js/jquery.fancybox.js",
               "src/assets/js/jQuery.style.switcher.min.js",
@@ -52,7 +51,10 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "scripts": true,
+               "styles": false
+              },
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
