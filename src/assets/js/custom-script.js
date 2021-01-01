@@ -15,7 +15,7 @@
       var windowpos = $(window).scrollTop();
       var siteHeader = $(".main-header");
       var sticky_header = $(".main-header .sticky-header");
-      if (windowpos > 120) {
+      if (windowpos > 50) {
         siteHeader.addClass("fixed-header");
         sticky_header.addClass("animated slideInDown");
       } else {
@@ -146,7 +146,7 @@
       margin: 0,
       nav: true,
       smartSpeed: 500,
-      autoplay: 6000,
+      autoplay: 9000,
       autoplayTimeout: 7000,
       navText: [
         '<span class="icon fa fa-angle-left"></span>',
