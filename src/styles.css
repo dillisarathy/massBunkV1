@@ -388,7 +388,7 @@
     float: left;
   }
   
-  .preloader {
+  .preloader{
     position: fixed;
     left: 0px;
     top: 0px;
@@ -409,7 +409,7 @@
     background-color: rgba(0, 0, 0, 0);
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: url(https://product.massbunk.in/massbunk/preloader.png);
+    background-image: url(https://product.massbunk.in/massbunk/Preloader.mp4);
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
     -ms-transition: all 200ms ease;

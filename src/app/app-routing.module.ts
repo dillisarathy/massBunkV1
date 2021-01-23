@@ -8,7 +8,11 @@ import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
     {
-        path: ' ',
+      path: '**',
+      component: PagenotfoundComponent,
+    },
+    {
+        path: '',
         component: HomepageComponent,
     },
     {
