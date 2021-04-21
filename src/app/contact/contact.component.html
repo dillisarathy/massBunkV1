@@ -38,40 +38,40 @@
                 <div class="inner" style="margin:40px">
                     <div class="form-box">
                         <div class="default-form">
-                            <form method="post" action="http://layerdrops.com/linoorhtml/sendemail.php" id="contact-form">
+                            <form (ngSubmit)="submitForm()" [formGroup]="userForm" id="contact-form">
                                 <div class="row clearfix">
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                         <div class="field-inner">
-                                            <input type="text" name="username" value="" placeholder="Your Name"
+                                            <input type="text" formControlName="name" value="" placeholder="Your Name"
                                                 required="">
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                         <div class="field-inner">
-                                            <input type="email" name="email" value=""
+                                            <input type="email" formControlName="emailAddress" value=""
                                                 placeholder="Email Address" required="">
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                         <div class="field-inner">
-                                            <input type="text" name="phone" value="" placeholder="Phone Number"
+                                            <input type="text" formControlName="phoneNo" value="" placeholder="Phone Number"
                                                 required="">
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-6 col-md-6 col-sm-12">
                                         <div class="field-inner">
-                                            <input type="text" name="subject" value="" placeholder="Subject"
+                                            <input type="text" formControlName="subject" value="" placeholder="Subject"
                                                 required="">
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                         <div class="field-inner">
-                                            <textarea name="message" placeholder="Write Message"
+                                            <textarea formControlName="message" placeholder="Write Message"
                                                 required=""></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                        <button class="theme-btn btn-style-one">
+                                        <button type="submit" class="theme-btn btn-style-one">
                                             <i class="btn-curve"></i>
                                             <span class="btn-title">Send message</span>
                                         </button>

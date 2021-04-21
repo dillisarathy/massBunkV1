@@ -299,7 +299,7 @@
 
 	.banner-three .banner-carousel .content-box .inner {
 	    max-width: none;
-	    text-align: center;
+	    text-align: left;
 	}
 
 	.banner-carousel .content-box h1 br{
@@ -612,7 +612,7 @@
 
 	.banner-carousel .content-box{
 		height: 600px;
-		text-align: center;
+		text-align: left;
 	}
 
 	.banner-carousel .slide-item .left-top-line,
@@ -793,8 +793,8 @@
 	}
 
 	.we-do-section .featured-block{
-		padding-left: 0;
-		padding-top: 0;
+		padding-left: 0 !important;
+    	padding-top: 45% !important;
 	}
 
 	.we-do-section .featured-block .image{

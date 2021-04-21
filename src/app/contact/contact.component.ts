@@ -1,6 +1,6 @@
 import { MailService } from './../services/mail.service';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -15,19 +15,18 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.userForm = new FormGroup({
-      name: new FormControl(''),
-      emailAddress: new FormControl(''),
-      phoneNo: new FormControl(''),
-      subject: new FormControl(''),
-      message: new FormControl('')
+      name: new FormControl('',Validators.required),
+      emailAddress: new FormControl('',Validators.required),
+      phoneNo: new FormControl('',Validators.required),
+      subject: new FormControl('',Validators.required),
+      message: new FormControl('',Validators.required)
     });
+    window.scrollTo(0, 0);
   }
 
-  /* submitForm()
+  submitForm()
   {
-    this.mailService.sendMailToMassbunk(this.userForm.name,this.userForm.);
-    this.mailService.sendMailToClient();
-  } */
-
-
+    this.mailService.sendMailToMassbunk(this.userForm.get('name').value,this.userForm.get('emailAddress').value,this.userForm.get('phoneNo').value,this.userForm.get('subject').value,this.userForm.get('message').value);
+    this.mailService.sendMailToClient(this.userForm.get('name').value,this.userForm.get('emailAddress').value);
+  }
 }

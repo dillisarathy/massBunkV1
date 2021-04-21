@@ -14,8 +14,8 @@ export class ServicesComponent implements OnInit {
   ngOnInit(): void {
     //If rounting happen document.ready function not trigger
     $.getScript('assets/js/custom-script.js');
-
-    this.content = {img:"http://layerdrops.com/linoorhtml/images/background/image-7.jpg"};
+    window.scrollTo(0, 0);
+    this.content = {img:"https://product.massbunk.in/massbunk/services.jpg"};
   }
 
 }

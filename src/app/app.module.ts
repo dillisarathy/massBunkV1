@@ -11,6 +11,8 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { WebdevelopmentComponent } from './webdevelopment/webdevelopment.component';
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,15 @@ import { ContactComponent } from './contact/contact.component';
     FooterComponent,
     HomepageComponent,
     PagenotfoundComponent,
-    AboutComponent,
     ServicesComponent,
-    WebdevelopmentComponent,
     ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+		ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
